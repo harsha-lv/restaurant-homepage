@@ -1,0 +1,218 @@
+/* About page content styles */
+#content .about-title {
+    font-size: 2.2rem;
+    color: #ff9800;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+#content .about-team {
+    background: #fff3e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(255,152,0,0.10);
+    padding: 1.5rem 2rem;
+    margin: 2rem auto 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+#content .about-team h2 {
+    color: #ff9800;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: 'Merriweather', serif;
+}
+
+#content .about-team p {
+    font-size: 1.05rem;
+    color: #444;
+    margin: 0.5rem 0;
+}
+/* Menu page content styles */
+#content .menu-title {
+    font-size: 2.2rem;
+    color: #ff9800;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+#content .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 1rem 0 2rem 0;
+}
+
+#content .menu-card {
+    background: #fff3e0;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(255,152,0,0.10);
+    padding: 1.5rem 1rem 1rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+#content .menu-card:hover {
+    box-shadow: 0 4px 24px rgba(255,152,0,0.18);
+}
+
+#content .menu-card img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#content .menu-card h2 {
+    font-size: 1.3rem;
+    color: #ff9800;
+    margin-bottom: 0.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+#content .menu-card p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0.5rem 0 0 0;
+    max-width: 220px;
+}
+/* Home tab content styles */
+#content h1 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+#content img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    margin: 1.5rem auto;
+    display: block;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+#content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1.5rem 0 1rem 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+#content p {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 0.75rem 0;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .hours {
+    background: #fff3e0;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 2rem auto 0 auto;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(255,152,0,0.10);
+    text-align: center;
+}
+
+#content .hours h3 {
+    color: #ff9800;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-tab {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    background: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-tab:hover {
+    background: #e0e0e0;
+    color: #222;
+}
+
+.nav-tab.active {
+    background: #ff9800;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 12px rgba(255,152,0,0.15);
+}
